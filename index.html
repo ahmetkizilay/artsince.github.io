@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Ahmet Kizilay's Github Page</title>
-    </head>
-    <body>
-        <span>.</span>
-    </body>
-</html>
+---
+layout: default
+title: artsince - Ahmet Kizilay
+---
+
+{% for repository in site.github.repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
