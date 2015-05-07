@@ -1,0 +1,17 @@
+---
+layout: default
+title: auto generated github summary for {{site.github.owner}}
+---
+
+<div>
+  This is an auto generated github profile for {{ site.github.owner }}
+</div>
+
+<h4>Public repositories</h4>
+<ul>
+{% for repository in site.github.public_repositories %}
+  <li>
+    <div><a href="{{repository.html_url}}">{{repository.name}}</a> is written with {{ repository.language}}</div>
+  </li>
+{% endfor %}
+</ul>
