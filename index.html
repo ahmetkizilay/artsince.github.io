@@ -1,17 +1,16 @@
 ---
 layout: default
-title: auto generated github summary for me
+title: Ahmet Kizilay
 ---
 
-<div>
-  This is an auto generated github profile for {{ site.github.owner_name }}
+<div class="container">
+  <div class="info">
+    <label class="name">Ahmet Kizilay</label>
+    <label class="description">HUMAN - DEVELOPER</label>
+    <div class="social-links">
+      <a href="https://github.com/artsince"><img src="img/github-64.png" alt="github"/></a>
+      <a href="https://soundcloud.com/ahmetkizilay"><img src="img/soundcloud_96.png" alt="soundcloud"/></a>
+      <a href="https://linkedin.com/ahmetkizilay"><img src="img/linkedin.png" alt="linkedin"/></a>
+    </div>
+  </div>
 </div>
-
-<h4>Public repositories</h4>
-<ul>
-{% for repository in site.github.public_repositories %}
-  <li>
-    <div><a href="{{repository.html_url}}">{{repository.name}}</a> is written with {{ repository.language}}</div>
-  </li>
-{% endfor %}
-</ul>

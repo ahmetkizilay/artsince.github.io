@@ -1,0 +1,58 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #71B280;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  padding: 0; margin: 0;
+  width: 100vw; height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  label {
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+  }
+}
+
+.info {
+  width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+
+  .name {
+      font-size: 2.25em;
+      text-transform: uppercase;
+  }
+
+  .description {
+  }
+
+
+  .social-links {
+    display: table;
+    margin: 24px auto;
+
+    a {
+      padding: 0px 12px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
