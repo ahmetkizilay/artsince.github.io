@@ -7,13 +7,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #71B280;
   font-family: 'Ubuntu', sans-serif;
 }
 
-.container {
+section.cover {
+  background-color: #71B280;
   padding: 0; margin: 0;
-  width: 100vw; height: 100vh;
+  width: 100%; height: 100vh;
   position: relative;
   margin: 0 auto;
   box-sizing: border-box;
@@ -23,36 +23,73 @@ body {
     margin-bottom: 12px;
     color: white;
   }
-}
 
-.info {
-  width: 100%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
+  .info {
+    width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
 
-  .name {
-      font-size: 2.25em;
-      text-transform: uppercase;
+    .name {
+        font-size: 2.25em;
+        text-transform: uppercase;
+    }
+
+    .description {
+    }
+
+
+    .social-links {
+      display: table;
+      margin: 24px auto;
+
+      a {
+        padding: 0px 12px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
   }
 
-  .description {
-  }
-
-
-  .social-links {
-    display: table;
-    margin: 24px auto;
+  .more {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 12px;
+    text-align: center;
 
     a {
-      padding: 0px 12px;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
+      outline: none;
     }
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+footer {
+  box-sizing: border-box;
+  height: 80px;
+  width: 100%;
+  background-color: #5D8991;
+  padding: 12px;
+}
+
+div.references {
+  height: 100%;
+  position: relative;
+
+  span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.75em;
   }
 }
