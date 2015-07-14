@@ -2,6 +2,21 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="ahmet kizilay,blog,{{page.tags}}">
+    <meta name="description" content="{{page.excerpt}}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="{{page.title}}" />
+    <meta name="twitter:description" content="{{ page.excerpt }}" />
+    <meta name="twitter:image" content="http://artsince.github.io/img/avatar.jpeg" />
+    <meta name="twitter:site" content="@ahmetkizilay" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://artsince.github.io/{{page.url}}" />
+    <meta property="og:image" content="http://artsince.github.io/img/avatar.jpeg" />
+    <meta property="og:description" content="{{page.excerpt}}" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/post.css">
   </head>
