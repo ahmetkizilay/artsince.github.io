@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/post.css">
+  </head>
+  <body>
+    <article>
+        {{ content }}
+    </article>
+    <footer>
+      <span>posted <label class="post-date">{{page.date}}</label></span>
+    </footer>
+    <script type="text/javascript" src="/js/vendor/moment.min.js"></script>
+    <script type="text/javascript">
+      var postDate = document.querySelector('.post-date');
+      postDate.innerHTML = moment(postDate.innerHTML, 'YYYY-MM-DD hh:mm:ss +/-TTTT').fromNow();
+    </script>
+  </body>
+</html>

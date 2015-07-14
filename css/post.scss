@@ -1,0 +1,49 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+article, footer {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-bottom: 20px;
+  border-top: 1px solid #DDD;
+}
+
+article p {
+  font-size: 1.0rem;
+  line-height: 1.25rem;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article h4 {
+  color: #382D2D;
+}
+
+article p > code {
+  background-color: #DDD;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+@media (min-width: 900px) {
+  article, footer {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

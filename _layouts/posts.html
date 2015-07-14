@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/posts.css">
+  </head>
+  <body>
+  {{ content }}
+  <script type="text/javascript" src="/js/vendor/moment.min.js"></script>
+  <script type="text/javascript">
+    var dates = document.querySelectorAll('.date');
+    var i;
+    for (i = 0; i < dates.length; i += 1) {
+      dates[i].innerHTML = moment(dates[i].innerHTML, 'YYYY-MM-DD hh:mm:ss +/-TTTT').fromNow();
+    }
+  </script>
+  </body>
+</html>

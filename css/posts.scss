@@ -1,0 +1,99 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+section.posts {
+  margin:24px 12px;
+  width: 100%;
+
+  ul {
+    margin: 0; padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0; padding: 0;
+    }
+  }
+
+  div.post-info {
+    display: inherit;
+    width: 100%;
+    margin-bottom: 18px;
+
+    div.left {
+      display: inherit;
+
+      a.title {
+        display: block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #444;
+        font-size: 1.5rem;
+        color: rgb(96, 96, 96);
+      }
+      a.visited {
+        color: rgb(96, 96, 96);
+      }
+
+      label.excerpt {
+        font-size: 1rem;
+        font-style: italic;
+        color: rgb(165, 165, 165);
+        line-height: 1.5rem;
+      }
+    }
+
+    label.date {
+      display: table-cell;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  section.posts {
+    margin:24px auto;
+    width: 475px;
+  }
+}
+
+@media (min-width: 800px) {
+  section.posts {
+    margin:24px auto;
+    width: 750px;
+
+    div.post-info {
+      display: table;
+      width: 100%;
+      margin-bottom: 18px;
+
+      div.left {
+        display: table-cell;
+
+        a.title {
+          display: block;
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: #444;
+          font-size: 1.5rem;
+          color: rgb(96, 96, 96);
+        }
+        a.visited {
+          color: rgb(96, 96, 96);
+        }
+
+        label.excerpt {
+          font-size: 1rem;
+          font-style: italic;
+          color: rgb(165, 165, 165);
+          line-height: 1.5rem;
+        }
+      }
+
+      label.date {
+        display: table-cell;
+        text-align: right;
+      }
+    }
+  }
+}
