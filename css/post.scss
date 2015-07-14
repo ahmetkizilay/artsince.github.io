@@ -35,9 +35,13 @@ article h4 {
 }
 
 article p > code {
-  background-color: #DDD;
+  background-color: #E9E9E9;
   overflow: scroll;
   white-space: nowrap;
+}
+
+article span.date {
+  color: #959595;
 }
 
 @media (min-width: 900px) {

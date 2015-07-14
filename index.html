@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ahmet Kizilay
+title: Ahmet Kizilay - Software Developer
 ---
 
 <section class="cover">
@@ -14,11 +14,22 @@ title: Ahmet Kizilay
     </div>
   </div>
   <div class="more">
-    <a href="#next"><img src="img/down.svg"/></a>
+    <a href="#posts"><img src="img/down.svg"/></a>
   </div>
 </section>
-<footer>
-  <div class="references">
-    <span>down by Stefan Parnarov from the Noun Project, other images are by their respective press kit.</span>
-  </div>
-</footer>
+<section class="posts" id="posts">
+  <h3>Latest posts</h3>
+  <ul>
+  {% for post in site.posts %}
+      <li>
+        <div class='post-info'>
+          <div class="left">
+            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+            <label class="excerpt"> {{ post.excerpt }}</label>
+          </div>
+          <label class="date">{{ post.date }}</label>
+        </div>
+      </li>
+  {% endfor %}
+  </ul>
+</section>

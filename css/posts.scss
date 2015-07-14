@@ -4,7 +4,7 @@
 
 section.posts {
   margin:24px 12px;
-  width: 100%;
+  box-sizing: border-box;
 
   ul {
     margin: 0; padding: 0;
@@ -46,6 +46,7 @@ section.posts {
     label.date {
       display: table-cell;
       text-align: right;
+      color: rgb(96, 96, 96);
     }
   }
 }
@@ -53,7 +54,9 @@ section.posts {
 @media (min-width: 450px) and (max-width: 800px) {
   section.posts {
     margin:24px auto;
-    width: 475px;
+    padding-left: 12px;
+    width: 90%;
+    max-width: 90%;
   }
 }
 
