@@ -19,6 +19,23 @@ article, footer {
 footer {
   margin-bottom: 20px;
   border-top: 1px solid #DDD;
+
+  div.references span {
+    font-size: 0.75em;
+  }
+
+  div.bottom-links {
+    margin: 6px 0;
+    a {
+      text-decoration: none;
+    }
+    a:first-of-type {
+      margin-right: 6px;
+    }
+    a:last-of-type {
+      margin-left: 6px;
+    }
+  }
 }
 
 article p {
@@ -49,5 +66,9 @@ article span.date {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  footer {
+    text-align: center;
   }
 }

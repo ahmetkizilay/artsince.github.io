@@ -24,9 +24,15 @@
     <article>
         {{ content }}
         <span class="date">posted <label class="post-date">{{page.date}}</label></span>
+        <div id="disqus_thread"></div>
     </article>
     <footer>
-      <div id="disqus_thread"></div>
+      <div class="bottom-links">
+        <a href="/">Home</a><a href="/posts.html">All posts</a>
+      </div>
+      <div class="references">
+        <span>Hosted by <a href="https://github.com/artsince/artsince.github.io" target="_blank">GitHub</a> and powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
+      </div>
     </footer>
     <script type="text/javascript" src="/js/vendor/moment.min.js"></script>
     <script type="text/javascript">
