@@ -18,7 +18,7 @@ Volumes are a way to persist data across several invocations of a container by m
 
 1. data volume: This is the `data` folder inside neo4j installation which containing the `graph.db` directory which actually holds the database files.
 2. plugins volume: the elastic search extension has some jar files that should go to the plugins folder of Neo4j.
-3. extension volume: This is my custom volume that contains a script file to be run before Neo4j starts.
+3. extension volume: This is my custom volume that contains a script file to be run before Neo4j starts. Note that this mapping will create a new directory in the Neo4j container. Therefore, it is important to select a directory name that will not break anything in the installation.
 
 #### Before-Start Hook
 With 2.3.2 Neo4j image, I can use `EXTENSION_SCRIPT` environment variable to specify a script file to execute before Neo4j starts. The Elastic Search extension needs two parameters to be set in `neo4j.properties` file, so I will create a script that concatenates two lines to the end of the file.
@@ -34,7 +34,7 @@ As a bonus, I can add service definitions for Neo4j and Elastic Search in a dock
 
 Now, running docker-compose with `--x-networking` flag will create two containers with `container_name` as their host names.
 
-As a second bonus, I can add modify my extension script to make sure the Elastic Search container starts before Neo4j does, so that I will not get any Connection Refused errors on startup.
+As a second bonus, I can modify my extension script to make sure the Elastic Search container starts before Neo4j does, so that I will not get any Connection Refused errors on startup.
 
 <script src="https://gist.github.com/artsince/111e145b2250db2257be.js?file=five.sh"></script>
 
