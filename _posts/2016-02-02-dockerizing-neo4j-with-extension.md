@@ -28,14 +28,16 @@ With 2.3.2 Neo4j image, I can use `EXTENSION_SCRIPT` environment variable to spe
 So, my command looks like this:
 <script src="https://gist.github.com/artsince/111e145b2250db2257be.js?file=three.sh"></script>
 
-As a bonus, I can add service definitions for neo4j and elasticsearch in a docker-compose file for easier networking configuration and maintainability.
+As a bonus, I can add service definitions for Neo4j and Elastic Search in a docker-compose file for easier networking and maintainability.
 
 <script src="https://gist.github.com/artsince/111e145b2250db2257be.js?file=four.yml"></script>
 
-Now, starting docker-compose with `--x-networking` flag will create both containers with `container_name` as their host names.
+Now, running docker-compose with `--x-networking` flag will create two containers with `container_name` as their host names.
 
-As another bonus, I can add modify my extension script to make sure the Elastic Search container starts before Neo4j starts, so that I will not get any Connection Refused errors on startup.
+As a second bonus, I can add modify my extension script to make sure the Elastic Search container starts before Neo4j does, so that I will not get any Connection Refused errors on startup.
 
 <script src="https://gist.github.com/artsince/111e145b2250db2257be.js?file=five.sh"></script>
 
 <br/>
+<br/>
+In this post, I showed how to setup a Neo4j instance with access to an Elastic Search service over the Docker network. For any questions or comments, feel free to get in touch by writing a comment below or sending me a tweet  [@ahmetkizilay](https://twitter.com/ahmetkizilay). Enjoy!
