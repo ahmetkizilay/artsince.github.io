@@ -25,7 +25,7 @@ With 2.3.2 Neo4j image, I can use `EXTENSION_SCRIPT` environment variable to spe
 
 <script src="https://gist.github.com/artsince/111e145b2250db2257be.js?file=two.sh"></script>
 
-So, my command looks like this:
+I know that Neo4j is installed in `/var/lib/neo4j` and it is OK to create a directory named `extension`. So, my command looks like this: 
 <script src="https://gist.github.com/artsince/111e145b2250db2257be.js?file=three.sh"></script>
 
 As a bonus, I can add service definitions for Neo4j and Elastic Search in a docker-compose file for easier networking and maintainability.
