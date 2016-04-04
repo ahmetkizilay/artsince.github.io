@@ -2,5 +2,5 @@
 
 set -e #halt script on error
 
-bundle exec jekyll build
+bundle exec jekyll build -d public/
 bundle exec htmlproof ./_site --href-ignore /linkedin.com/
