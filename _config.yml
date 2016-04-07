@@ -2,3 +2,5 @@ sass:
   style: compressed
 
 exclude: [vendor]
+
+url: https://ahmetkizilay.com
