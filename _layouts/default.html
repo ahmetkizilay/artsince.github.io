@@ -15,6 +15,11 @@
     <meta property="og:description" content="Home page for Ahmet Kizilay, software developer" />
     <link rel="canonical" href="https://ahmetkizilay.com{{page.url}}" />
     <title>{{ page.title }}</title>
+    <script type="text/javascript">
+    if (window.location.protocol != "https:") {
+      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    }
+    </script>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/posts.css">
   </head>
