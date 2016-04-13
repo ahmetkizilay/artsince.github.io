@@ -17,23 +17,25 @@ title: Ahmet Kizilay - Software Developer
     <a href="#posts"><img src="img/down.svg" alt="click down for more"/></a>
   </div>
 </section>
-<section class="posts" id="posts">
-  <h3>Latest posts</h3>
-  <ul>
-  {% for post in site.posts %}
-      <li>
-        <div class='post-info'>
-          <div class="left">
-            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-            <label class="excerpt"> {{ post.excerpt }}</label>
+<section class="s posts" id="posts">
+  <div class="section-wrapper">
+    <h3>Latest posts</h3>
+    <ul>
+    {% for post in site.posts %}
+        <li>
+          <div class='post-info'>
+            <div class="left">
+              <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+              <label class="excerpt"> {{ post.excerpt }}</label>
+            </div>
+            <label class="date">{{ post.date }}</label>
           </div>
-          <label class="date">{{ post.date }}</label>
-        </div>
-      </li>
-  {% endfor %}
-  </ul>
+        </li>
+    {% endfor %}
+    </ul>
+  </div>
 </section>
-<section class="s">
+<section class="s bio">
   <div class="section-wrapper">
     <div>
       <img src="/img/avatar.jpeg" alt="my picture"/>

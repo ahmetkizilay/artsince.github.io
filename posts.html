@@ -3,19 +3,21 @@ layout: posts
 title: All posts
 ---
 
-<section class="posts">
-  <h3>Posts available so far</h3>
-  <ul>
-  {% for post in site.posts %}
-      <li>
-        <div class='post-info'>
-          <div class="left">
-            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-            <label class="excerpt"> {{ post.excerpt }}</label>
+<section class="s posts">
+  <div class="section-wrapper">
+    <h3>Posts available so far</h3>
+    <ul>
+    {% for post in site.posts %}
+        <li>
+          <div class='post-info'>
+            <div class="left">
+              <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+              <label class="excerpt"> {{ post.excerpt }}</label>
+            </div>
+            <label class="date">{{ post.date }}</label>
           </div>
-          <label class="date">{{ post.date }}</label>
-        </div>
-      </li>
-  {% endfor %}
-  </ul>
+        </li>
+    {% endfor %}
+    </ul>
+  <div>
 </section>

@@ -76,12 +76,39 @@ section.cover {
 
 
 section.s {
-  background-color: #71B280;
-
   div.section-wrapper {
     padding: 24px 12px;
     box-sizing: border-box;
+  }
+}
 
+@media (min-width: 450px) and (max-width: 800px) {
+  section.bio {
+    div.section-wrapper {
+      margin: auto;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      width: 90%;
+      max-width: 90%;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  section.s {
+    div.section-wrapper {
+      margin: auto;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      width: 750px;
+    }
+  }
+}
+
+section.bio {
+  background-color: #71B280;
+
+  div.section-wrapper {
     div {
       text-align: center;
 
@@ -104,20 +131,8 @@ section.s {
   }
 }
 
-@media (min-width: 450px) and (max-width: 800px) {
-  section.s {
-    div.section-wrapper {
-      margin: auto;
-      padding-top: 24px;
-      padding-bottom: 24px;
-      width: 90%;
-      max-width: 90%;
-    }
-  }
-}
-
 @media (min-width: 450px) {
-  section.s {
+  section.bio {
     div.section-wrapper {
       div {
         display: table;
@@ -137,13 +152,93 @@ section.s {
   }
 }
 
+section.posts {
+  background-color: white;
+
+  ul {
+    margin: 0; padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0; padding: 0;
+    }
+  }
+
+  div.post-info {
+    display: inherit;
+    width: 100%;
+    margin-bottom: 18px;
+
+    div.left {
+      display: inherit;
+
+      a.title {
+        display: block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #444;
+        font-size: 1.5rem;
+        color: rgb(96, 96, 96);
+      }
+      a.visited {
+        color: rgb(96, 96, 96);
+      }
+
+      label.excerpt {
+        font-size: 1rem;
+        font-style: italic;
+        color: rgb(165, 165, 165);
+        line-height: 1.5rem;
+      }
+    }
+
+    label.date {
+      display: table-cell;
+      text-align: right;
+      color: rgb(96, 96, 96);
+    }
+  }
+}
+
 @media (min-width: 800px) {
-  section.s {
+  section.posts {
     div.section-wrapper {
-      margin: auto;
-      padding-top: 48px;
-      padding-bottom: 48px;
-      width: 750px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      div.post-info {
+        display: table;
+        width: 100%;
+        margin-bottom: 18px;
+
+        div.left {
+          display: table-cell;
+          width: 612px;
+          a.title {
+            display: block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #444;
+            font-size: 1.5rem;
+            color: rgb(96, 96, 96);
+          }
+          a.visited {
+            color: rgb(96, 96, 96);
+          }
+
+          label.excerpt {
+            font-size: 1rem;
+            font-style: italic;
+            color: rgb(165, 165, 165);
+            line-height: 1.5rem;
+          }
+        }
+
+        label.date {
+          display: table-cell;
+          text-align: right;
+        }
+      }
     }
   }
 }

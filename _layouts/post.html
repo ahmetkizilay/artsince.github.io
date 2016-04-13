@@ -19,11 +19,13 @@
     <meta property="og:description" content="{{page.excerpt}}" />
     <link rel="canonical" href="{{site.url}}{{page.url}}" />
     <title>{{ page.title }}</title>
+    {% if jekyll.environment == "production" %}
     <script type="text/javascript">
     if (window.location.protocol != "https:") {
       window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
     }
     </script>
+    {% endif %}
     <link rel="stylesheet" href="/css/post.css">
   </head>
   <body>
