@@ -74,6 +74,81 @@ section.cover {
   }
 }
 
+
+section.s {
+  background-color: #71B280;
+
+  div.section-wrapper {
+    padding: 24px 12px;
+    box-sizing: border-box;
+
+    div {
+      text-align: center;
+
+      img {
+        width: 256px;
+        height: 256px;
+        border-radius: 100%;
+      }
+
+      label {
+        display: block;
+        margin-top: 12px;
+        font-size: 1.25rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  section.s {
+    div.section-wrapper {
+      margin: auto;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      width: 90%;
+      max-width: 90%;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  section.s {
+    div.section-wrapper {
+      div {
+        display: table;
+        width: 100%;
+        text-align: left;
+
+        img {
+          display: table-cell;
+        }
+        label {
+          display: table-cell;
+          vertical-align: middle;
+          padding-left: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  section.s {
+    div.section-wrapper {
+      margin: auto;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      width: 750px;
+    }
+  }
+}
+
+
 footer {
   box-sizing: border-box;
   height: 80px;
