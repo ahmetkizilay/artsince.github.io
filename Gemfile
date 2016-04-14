@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
 gem 'jekyll'
 gem 'kramdown'
-gem 'html-proofer'
-gem 'jekyll-press'
+gem 'octopress-minify-html'
