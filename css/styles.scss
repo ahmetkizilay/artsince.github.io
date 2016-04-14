@@ -45,13 +45,32 @@ section.cover {
 
     .social-links {
       display: table;
-      margin: 24px auto;
+      margin: 48px auto;
 
       a {
         padding: 0px 12px;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
+      }
+
+      a > svg {
+        width: 64px;
+        height: 64px;
+      }
+
+      a.soundcloud > svg {
+        width: 128px;
+      }
+
+      @media (min-width: 800px) {
+        a > svg {
+          width: 128px;
+          height: 128px;
+        }
+        a.soundcloud > svg {
+          width: 256px;
+        }
       }
     }
   }
@@ -67,7 +86,7 @@ section.cover {
       outline: none;
     }
 
-    img {
+    svg {
       width: 48px;
       height: 48px;
     }

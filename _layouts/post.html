@@ -42,7 +42,14 @@
         <span>Hosted by <a href="https://gitlab.com/ahmetkizilay.gitlab.io" target="_blank">GitLab</a> and powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
       </div>
     </footer>
-    <script type="text/javascript" src="/js/vendor/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+    <script type="text/javascript">
+      var dates = document.querySelectorAll('.date');
+      var i;
+      for (i = 0; i < dates.length; i += 1) {
+        dates[i].innerHTML = moment(dates[i].innerHTML, 'YYYY-MM-DD hh:mm:ss +/-TTTT').fromNow();
+      }
+    </script>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
         var disqus_shortname = 'artsince-github-io';
@@ -55,9 +62,5 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    <script type="text/javascript">
-      var postDate = document.querySelector('.post-date');
-      postDate.innerHTML = moment(postDate.innerHTML, 'YYYY-MM-DD hh:mm:ss +/-TTTT').fromNow();
-    </script>
   </body>
 </html>
